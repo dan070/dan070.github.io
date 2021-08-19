@@ -1,0 +1,1106 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dan Gustafsson" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Google&rsquo;s take on messiness About 10 years after the &ldquo;Zeroth moment of truth&rdquo; (dubbed ZMOT&hellip; giggle), Google does a retake of the same ideas. Their research report: &ldquo;Decoding Decisions, messy middle&rdquo; came out July 2020." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://academic-demo.netlify.app/post/the-messy-middle-made-daty/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#707070" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.bbc65983a1007a9cbb6ffa65fbe162c0.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://academic-demo.netlify.app/post/the-messy-middle-made-daty/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Blog of Dan Gustafsson" />
+  <meta property="og:url" content="https://academic-demo.netlify.app/post/the-messy-middle-made-daty/" />
+  <meta property="og:title" content="The messy middle and how to make it data-sciency | Blog of Dan Gustafsson" />
+  <meta property="og:description" content="Google&rsquo;s take on messiness About 10 years after the &ldquo;Zeroth moment of truth&rdquo; (dubbed ZMOT&hellip; giggle), Google does a retake of the same ideas. Their research report: &ldquo;Decoding Decisions, messy middle&rdquo; came out July 2020." /><meta property="og:image" content="https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-08-17T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-08-17T06:16:53&#43;02:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://academic-demo.netlify.app/post/the-messy-middle-made-daty/"
+  },
+  "headline": "The messy middle and how to make it data-sciency",
+  
+  "datePublished": "2021-08-17T00:00:00Z",
+  "dateModified": "2021-08-17T06:16:53+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dan Gustafsson"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog of Dan Gustafsson",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Google\u0026rsquo;s take on messiness About 10 years after the \u0026ldquo;Zeroth moment of truth\u0026rdquo; (dubbed ZMOT\u0026hellip; giggle), Google does a retake of the same ideas. Their research report: \u0026ldquo;Decoding Decisions, messy middle\u0026rdquo; came out July 2020."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>The messy middle and how to make it data-sciency | Blog of Dan Gustafsson</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="13e9f0784523da2f38216083698b6d44" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Blog of Dan Gustafsson</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Blog of Dan Gustafsson</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>The messy middle and how to make it data-sciency</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-08-17
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="googles-take-on-messiness">Google&rsquo;s take on messiness</h2>
+<p>About 10 years after the &ldquo;Zeroth moment of truth&rdquo; (dubbed ZMOT&hellip; giggle), Google does a retake of the same ideas. Their research report: &ldquo;Decoding Decisions, messy middle&rdquo; came out July 2020.</p>
+<p>The feeling they want you to have after reading about the &ldquo;Messy middle&rdquo; is of &lsquo;Charting undiscovered territory&rsquo; (a headline in the text). However, they are not going as much upwind, as they would want you to feel. To prove that, let&rsquo;s go back 10 years.</p>
+<h2 id="the-zmot-that-came-before">The ZMOT that came before</h2>
+<p>Rereading now, ten years after publication, ZMOT comes across as part marketing science and part marketing campaign tutorial. It&rsquo;s also part &lsquo;Digitalisation 101&rsquo; course, with lines such as:</p>
+<blockquote>
+<p>&hellip;now there’s no friction. You can pull out your mobile phone and look it up.</p>
+</blockquote>
+<blockquote>
+<p>&hellip;people take the time to leave messages online about how much they love Scotch Tape. That’s because the effort is down to zero.</p>
+</blockquote>
+<h4 id="teach-the-old-marketing-dogs-about-digital">Teach the old marketing dogs about digital</h4>
+<p>The ZMOT also included a whole section of counter-arguments to objections from marketing managers: “It doesn’t apply to my industry.” or &ldquo;We already have a website. We&rsquo;re doing fine.&rdquo;</p>
+<p>One headline reads: &lsquo;The rise of video&rsquo; and contains this (prudent) remark :</p>
+<blockquote>
+<p>Today’s young adults have had mobile-phone cameras in their pockets since they were old enough to have pockets.</p>
+</blockquote>
+<p>Other admonitions of hurry-up-and-get-digitalized read:</p>
+<blockquote>
+<p>You’d never set up a corporate 1-800 number with nobody to answer the phone. (Would you?) &hellip; The Internet is that 1-800 number, and it’s been set up for you even though you didn’t ask for it.</p>
+</blockquote>
+<p>Maybe they were aiming to open they eyes of old-school marketers. It&rsquo;s a little paternal. But probably an effective communication mode.</p>
+<h4 id="a-playbook-to-usher-digital-marketing-in">A playbook to usher digital marketing in</h4>
+<p>The ZMOT makes for a great manual on how to sell SEO and ads to marketing managers! Like this: (1) Point to a changing world, (2) give a new model for marketing, (3) prove that it&rsquo;s actually true, (4) counter any arguments, and then (5) give concrete advice on what to do. Finish with (6) a safari of the future.</p>
+<h2 id="the-messy-middle-update-versus-the-zmot">The messy middle update, versus the ZMOT</h2>
+<p>So, what has changed since ZMOT? And what is new in the &ldquo;messy middle&rdquo; (shortened to MM here)</p>
+<h4 id="the-basic-story-of-internet-shoppers-is-unchanged">The basic story of internet shoppers is unchanged</h4>
+<p>The basic story remains, in both the MM and ZMOT. Going from stimulus - into the internet - out via an order. The MM has a cleaner conceptualisation. And methods of actionability. The ZMOT was heavier on anecdotes and interviews with satisfied Google-customers.</p>
+<p>The empiric premise in both texts are the same: &ldquo;We asked a bunch of people how they shop online. This is what we found&rdquo;. Also, a good part of the MM text goes through how to explore markets with Google Trends and the resulting conclusions with some 20 figures. In this sense, it&rsquo;s partly &ldquo;open&rdquo; research (as in &lsquo;open software&rsquo;).</p>
+<h4 id="cognitive-bias-research-has-been-made-a-cornerstone">Cognitive bias research has been made a cornerstone</h4>
+<p>The MM language <em>feels</em> more academic, with words like &lsquo;consideration sets&rsquo;, &lsquo;intersection&rsquo; and &lsquo;hypothesis&rsquo;. These words don&rsquo;t even occur in the ZMOT text.</p>
+<p>The new jargon of behavioural science has heavily influenced the MM, like &lsquo;reward system&rsquo;, &lsquo;cognitive inputs&rsquo; etc. Specifically, the MM is more clear on how to influence the buyers using cognitive shortcuts while the ZMOT is more like a chatty mentor. The &ldquo;cognitive biases&rdquo; could be found (scattered and buried) in the ZMOT text, but now they form the bulk of a clearly though-out experiment.</p>
+<h2 id="what-others-say">What others say</h2>
+<p>There are a few different opinions, <a href="https://medium.com/@nickbarthram/googles-new-messy-middle-what-s-it-all-about-6a1a50be3df5" target="_blank" rel="noopener">here for example</a> where critics point out:</p>
+<ul>
+<li>
+<p>the ethical sides of using cognitive biases (e.g. Darth Vader also uses these skills)</p>
+</li>
+<li>
+<p>the simple fact that Google (in both texts) reaches conclusions favorable to their own search/ads products.</p>
+</li>
+</ul>
+<p>Others <a href="https://www.searchenginejournal.com/seo-messy-middle-purchase-journey/390575/#close" target="_blank" rel="noopener">here</a> find that they&rsquo;ve personally been ahead of Google all this time.</p>
+<ul>
+<li>
+<p>Some have been teaching these very ideas for the last 20 years.</p>
+</li>
+<li>
+<p>Their big epiphany (whenever that happened) is that consumers/people are now empowered and not passive.</p>
+</li>
+</ul>
+<p>But most [here] (<a href="https://www.thedrum.com/opinion/2020/10/28/digital-marketer-s-guide-google-s-messy-middle" target="_blank" rel="noopener">https://www.thedrum.com/opinion/2020/10/28/digital-marketer-s-guide-google-s-messy-middle</a>) seem to be in agreement that</p>
+<ul>
+<li>the Google study is a &lsquo;fresh perspective&rsquo; but might not &lsquo;replace a good strategy&rsquo;</li>
+</ul>
+<h3 id="the-discovery-of-kahneman">The discovery of Kahneman</h3>
+<p><a href="https://www.thebearchitects.com/our-work/blog/decoding-decisions-why-marketers-need-to-master-the-messy-middle/" target="_blank" rel="noopener">The firm</a> that Google collaborated with, seems inspired by Kahneman et al (using his language of System 1 and System 2 thinking on their web pages). Tversky and Kahneman&rsquo;s book would, it seems, have been transformed into a specialist marketing company.</p>
+<h2 id="the-next-step">The next step</h2>
+<p>As I&rsquo;m partly working in the field, I&rsquo;m setting out to make a data science model of the MM. The model would be just a framework, to be filled with data from a specific marketing department.</p>
+<p>The model data could be from various systems, but the model coefficients would reflect the specific customer behavior in the specified market under consideration.</p>
+<p>On top, I&rsquo;ll try to fit in the effects of interventions on the different stages. This is the usual focus of analytics, but I&rsquo;m looking for a context that can also determine the effect size.</p>
+<p>The method I plan to use will be predominately Bayesian on aggregated data.</p>
+<p>The next post in this trail will be inserted here. So, stay tuned =)</p>
+<p>PS. Seems the &ldquo;Messy Middle&rdquo; title was inspired by this: <a href="https://www.themessymiddle.com/" target="_blank" rel="noopener">https://www.themessymiddle.com/</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://academic-demo.netlify.app/post/the-messy-middle-made-daty/&amp;text=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://academic-demo.netlify.app/post/the-messy-middle-made-daty/&amp;t=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency&amp;body=https://academic-demo.netlify.app/post/the-messy-middle-made-daty/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://academic-demo.netlify.app/post/the-messy-middle-made-daty/&amp;title=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency%20https://academic-demo.netlify.app/post/the-messy-middle-made-daty/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://academic-demo.netlify.app/post/the-messy-middle-made-daty/&amp;title=The%20messy%20middle%20and%20how%20to%20make%20it%20data-sciency" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://academic-demo.netlify.app/"><img class="avatar mr-3 avatar-circle" src="/author/dan-gustafsson/avatar_hu37b6afaa0eeda663f2805652760de1be_494026_270x270_fill_q75_lanczos_center.jpg" alt="Dan Gustafsson"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://academic-demo.netlify.app/">Dan Gustafsson</a></h5>
+      
+      <p class="card-text">Becoming a data-scientist/Tommy-knocker.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:dan0704090017@hotmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dan070" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://linkedin.com/in/dan0704090017" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

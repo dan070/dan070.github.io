@@ -5,12 +5,84 @@
     <link>https://academic-demo.netlify.app/post/</link>
       <atom:link href="https://academic-demo.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://academic-demo.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://academic-demo.netlify.app/post/</link>
     </image>
+    
+    <item>
+      <title>The messy middle and how to make it data-sciency</title>
+      <link>https://academic-demo.netlify.app/post/the-messy-middle-made-daty/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://academic-demo.netlify.app/post/the-messy-middle-made-daty/</guid>
+      <description>&lt;h2 id=&#34;googles-take-on-messiness&#34;&gt;Google&amp;rsquo;s take on messiness&lt;/h2&gt;
+&lt;p&gt;About 10 years after the &amp;ldquo;Zeroth moment of truth&amp;rdquo; (dubbed ZMOT&amp;hellip; giggle), Google does a retake of the same ideas. Their research report: &amp;ldquo;Decoding Decisions, messy middle&amp;rdquo; came out July 2020.&lt;/p&gt;
+&lt;p&gt;The feeling they want you to have after reading about the &amp;ldquo;Messy middle&amp;rdquo; is of &amp;lsquo;Charting undiscovered territory&amp;rsquo; (a headline in the text). However, they are not going as much upwind, as they would want you to feel. To prove that, let&amp;rsquo;s go back 10 years.&lt;/p&gt;
+&lt;h2 id=&#34;the-zmot-that-came-before&#34;&gt;The ZMOT that came before&lt;/h2&gt;
+&lt;p&gt;Rereading now, ten years after publication, ZMOT comes across as part marketing science and part marketing campaign tutorial. It&amp;rsquo;s also part &amp;lsquo;Digitalisation 101&amp;rsquo; course, with lines such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;now there’s no friction. You can pull out your mobile phone and look it up.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;people take the time to leave messages online about how much they love Scotch Tape. That’s because the effort is down to zero.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;teach-the-old-marketing-dogs-about-digital&#34;&gt;Teach the old marketing dogs about digital&lt;/h4&gt;
+&lt;p&gt;The ZMOT also included a whole section of counter-arguments to objections from marketing managers: “It doesn’t apply to my industry.” or &amp;ldquo;We already have a website. We&amp;rsquo;re doing fine.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;One headline reads: &amp;lsquo;The rise of video&amp;rsquo; and contains this (prudent) remark :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Today’s young adults have had mobile-phone cameras in their pockets since they were old enough to have pockets.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Other admonitions of hurry-up-and-get-digitalized read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You’d never set up a corporate 1-800 number with nobody to answer the phone. (Would you?) &amp;hellip; The Internet is that 1-800 number, and it’s been set up for you even though you didn’t ask for it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Maybe they were aiming to open they eyes of old-school marketers. It&amp;rsquo;s a little paternal. But probably an effective communication mode.&lt;/p&gt;
+&lt;h4 id=&#34;a-playbook-to-usher-digital-marketing-in&#34;&gt;A playbook to usher digital marketing in&lt;/h4&gt;
+&lt;p&gt;The ZMOT makes for a great manual on how to sell SEO and ads to marketing managers! Like this: (1) Point to a changing world, (2) give a new model for marketing, (3) prove that it&amp;rsquo;s actually true, (4) counter any arguments, and then (5) give concrete advice on what to do. Finish with (6) a safari of the future.&lt;/p&gt;
+&lt;h2 id=&#34;the-messy-middle-update-versus-the-zmot&#34;&gt;The messy middle update, versus the ZMOT&lt;/h2&gt;
+&lt;p&gt;So, what has changed since ZMOT? And what is new in the &amp;ldquo;messy middle&amp;rdquo; (shortened to MM here)&lt;/p&gt;
+&lt;h4 id=&#34;the-basic-story-of-internet-shoppers-is-unchanged&#34;&gt;The basic story of internet shoppers is unchanged&lt;/h4&gt;
+&lt;p&gt;The basic story remains, in both the MM and ZMOT. Going from stimulus - into the internet - out via an order. The MM has a cleaner conceptualisation. And methods of actionability. The ZMOT was heavier on anecdotes and interviews with satisfied Google-customers.&lt;/p&gt;
+&lt;p&gt;The empiric premise in both texts are the same: &amp;ldquo;We asked a bunch of people how they shop online. This is what we found&amp;rdquo;. Also, a good part of the MM text goes through how to explore markets with Google Trends and the resulting conclusions with some 20 figures. In this sense, it&amp;rsquo;s partly &amp;ldquo;open&amp;rdquo; research (as in &amp;lsquo;open software&amp;rsquo;).&lt;/p&gt;
+&lt;h4 id=&#34;cognitive-bias-research-has-been-made-a-cornerstone&#34;&gt;Cognitive bias research has been made a cornerstone&lt;/h4&gt;
+&lt;p&gt;The MM language &lt;em&gt;feels&lt;/em&gt; more academic, with words like &amp;lsquo;consideration sets&amp;rsquo;, &amp;lsquo;intersection&amp;rsquo; and &amp;lsquo;hypothesis&amp;rsquo;. These words don&amp;rsquo;t even occur in the ZMOT text.&lt;/p&gt;
+&lt;p&gt;The new jargon of behavioural science has heavily influenced the MM, like &amp;lsquo;reward system&amp;rsquo;, &amp;lsquo;cognitive inputs&amp;rsquo; etc. Specifically, the MM is more clear on how to influence the buyers using cognitive shortcuts while the ZMOT is more like a chatty mentor. The &amp;ldquo;cognitive biases&amp;rdquo; could be found (scattered and buried) in the ZMOT text, but now they form the bulk of a clearly though-out experiment.&lt;/p&gt;
+&lt;h2 id=&#34;what-others-say&#34;&gt;What others say&lt;/h2&gt;
+&lt;p&gt;There are a few different opinions, &lt;a href=&#34;https://medium.com/@nickbarthram/googles-new-messy-middle-what-s-it-all-about-6a1a50be3df5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here for example&lt;/a&gt; where critics point out:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;the ethical sides of using cognitive biases (e.g. Darth Vader also uses these skills)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the simple fact that Google (in both texts) reaches conclusions favorable to their own search/ads products.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Others &lt;a href=&#34;https://www.searchenginejournal.com/seo-messy-middle-purchase-journey/390575/#close&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; find that they&amp;rsquo;ve personally been ahead of Google all this time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some have been teaching these very ideas for the last 20 years.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Their big epiphany (whenever that happened) is that consumers/people are now empowered and not passive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But most [here] (&lt;a href=&#34;https://www.thedrum.com/opinion/2020/10/28/digital-marketer-s-guide-google-s-messy-middle&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.thedrum.com/opinion/2020/10/28/digital-marketer-s-guide-google-s-messy-middle&lt;/a&gt;) seem to be in agreement that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the Google study is a &amp;lsquo;fresh perspective&amp;rsquo; but might not &amp;lsquo;replace a good strategy&amp;rsquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-discovery-of-kahneman&#34;&gt;The discovery of Kahneman&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.thebearchitects.com/our-work/blog/decoding-decisions-why-marketers-need-to-master-the-messy-middle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The firm&lt;/a&gt; that Google collaborated with, seems inspired by Kahneman et al (using his language of System 1 and System 2 thinking on their web pages). Tversky and Kahneman&amp;rsquo;s book would, it seems, have been transformed into a specialist marketing company.&lt;/p&gt;
+&lt;h2 id=&#34;the-next-step&#34;&gt;The next step&lt;/h2&gt;
+&lt;p&gt;As I&amp;rsquo;m partly working in the field, I&amp;rsquo;m setting out to make a data science model of the MM. The model would be just a framework, to be filled with data from a specific marketing department.&lt;/p&gt;
+&lt;p&gt;The model data could be from various systems, but the model coefficients would reflect the specific customer behavior in the specified market under consideration.&lt;/p&gt;
+&lt;p&gt;On top, I&amp;rsquo;ll try to fit in the effects of interventions on the different stages. This is the usual focus of analytics, but I&amp;rsquo;m looking for a context that can also determine the effect size.&lt;/p&gt;
+&lt;p&gt;The method I plan to use will be predominately Bayesian on aggregated data.&lt;/p&gt;
+&lt;p&gt;The next post in this trail will be inserted here. So, stay tuned =)&lt;/p&gt;
+&lt;p&gt;PS. Seems the &amp;ldquo;Messy Middle&amp;rdquo; title was inspired by this: &lt;a href=&#34;https://www.themessymiddle.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.themessymiddle.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Output is the new black</title>
